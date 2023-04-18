@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hello World</h1>
+    
+    <button onclick="changeStyle()"> Click me</button>
+
+    <p id="my_paragraph"> I like chicken</p>
+    <hr>
+    <p> infinite button </p>
+    <button onclick="addCounter()" id="counter_button">0</button>
+<hr>
+secretPassword
+    <input>
+    <button onclick="secretButton">Submit</button>
+
+
+
+    
+<script lang="js">
+     console.log("Hellwo world")
+
+
+
+     document.write("<h1>Hello World</h1>")
+     document.write("Welcome to my Javascript Website")
+     let myParagraph = document.getElementById("my_paragraph")
+
+  function  changeStyle() {
+myParagraph.innerHTML= "This was modified by Java Script"
+myParagraph.style ='background: red; color: cyan'
+alert("stop clicking")
+}
+
+
+function secretPassword(){
+
+if(o=1234){
+
+    window.location='https://www.youtube.com/'
+}
+else{document.write("Wrong Password")
+
+}
+
+}
+
+
+
+
+
+
+let counter = 0
+
+function addCounter() {
+    counter=counter + 1
+    let counterButton = document.getElementById("counter_button")
+    counterButton.innerHTML=counter
+}
+function inputButton (){
+    let myInput = document.getElementById("my_input")
+
+    console.log(myInput.Value)
+}
+function secretButton(){
+    window.location='https://www.youtube.com/'
+}
+
+let secretPass = document.getElementById("o")
+
+</script>
+
+</body>
+</html>

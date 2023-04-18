@@ -10,7 +10,7 @@ if(myage >=20){
 }
 
 
-let mylist=[Shamour, Adrian,Kasim,Mcflower, Mr.Forlenza,Bruce Wang]
+let mylist=[Shamour, Adrian,Mcflower, Mr.Forlenza,Bruce Wang,Fahim ]
 for(let item of mylist){
     console.log(item*4)
 }
