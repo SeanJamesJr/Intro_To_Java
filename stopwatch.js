@@ -5,7 +5,10 @@ let minutes = 0
 
 let digits = document.getElementById('digits')
 
+let interval;
+
 function start() {
+    reset()
 
     interval=setInterval ( function() {
         milliseconds = milliseconds + 10
@@ -27,11 +30,18 @@ function start() {
 
 }
 
-    function stop (){
-        clearInterval(interval)
-        }
+function stop () {
+    clearInterval(interval)
+}
+        
 
-function reset(){
+function reset() {
+    stop()
 
-    alert("You clicked the restart button")
+ milliseconds = 0
+ seconds = 0
+ minutes = 0
+ digits.innerHTML= String(minutes).padStart(2,'0') + ':' + String(seconds).padStart(2,'0') + ':' + String(milliseconds).padStart(2,'0')
+
+
 }
